@@ -1,0 +1,22 @@
+.content {
+    > * {
+        max-width: 700px;
+    }
+
+    p:has(> *) {
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.pagination {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 60px;
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for page in paginator.pages %}
+        <div class="content">
+            {{ page.content | safe }}
+        </div>
+    {% endfor %}
+
+    <nav class="pagination">
+        {% if paginator.previous %}
+            <a href="{{ paginator.previous }}">‹</a>
+        {% endif %}
+        {% if paginator.next %}
+            <a href="{{ paginator.next }}">›</a>
+        {% endif %}
+    </nav>
+{% endblock content %}
