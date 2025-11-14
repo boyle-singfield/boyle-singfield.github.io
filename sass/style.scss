@@ -1,16 +1,6 @@
 .content {
-    > * {
-        max-width: 700px;
-    }
-
-    p:has(> *) {
-        max-width: 100%;
-    }
-
     img {
-        width: 100%;
-        height: auto;
-        display: block;
+        max-width: 100%;
     }
 }
 
